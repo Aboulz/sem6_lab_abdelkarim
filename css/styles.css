@@ -44,6 +44,7 @@ header{
     width: 1000px;
     background-color: rgba(15, 38, 49, 95%);
     position: fixed;
+    top: 0;
     left: calc(50% - 500px);
     z-index: 1;
     border-radius: 0 0 20px 20px;
@@ -56,4 +57,46 @@ h1{
     margin: 0;
     font-size: 40px;
     height: 80px;
+}
+
+/*      Section      */
+
+.contenu{
+    max-width: 925px;
+    margin: 100px auto 0 auto;
+}
+
+.photo{
+    max-width: 100%;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    margin: 0;
+    list-style: none;
+    padding: 20px;
+    background-color: rgb(15, 38, 49);
+    border-radius: 10px;
+
+}
+
+li{
+    position: relative;
+}
+
+.bouton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 5px;
+    background-color: white;
+    opacity: 50%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
 }
